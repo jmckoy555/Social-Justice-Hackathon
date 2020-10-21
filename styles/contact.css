@@ -1,5 +1,10 @@
+*{
+  margin:0;
+  padding:0;
+}
+
 .navContainer {
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
     background: #0398FC;
     padding-bottom: 1em;
@@ -51,7 +56,141 @@
     width: 100%;
   }
 
+  
+.contact-hero{
+  background: #0398FC;
+}
+
+
+#contact{
+  font-size: 3em;
+}
+
   body{
-    background-color: #d63636;
+    font-family: Avenir, sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+
+
+
+  .contact-back{
+    overflow: hidden; 
   }
   
+  form{
+    margin-top: 8%;
+    margin-bottom: 5%;
+
+  }
+
+  form input{
+    margin: 0 0
+  }
+  
+  .label{
+    background-color: rgb(245, 79, 79);
+    padding: .6em;
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: #0398FC;
+    color: white;
+    margin: 0 35%;
+    width: 29.3%;
+    text-align: left;
+    font-size: .7em;
+  }
+  
+  input[type="text"], select, textarea{
+    display: block;
+    padding: 1em;
+    border: .3em solid rgb(170, 167, 167);
+    border-radius: .2em;
+    box-sizing: border-box;
+    margin: 0 35% .5% 35%;
+    width: 30%;
+    font-size: 1em;
+  }
+  
+  input[type = "submit"]{
+    background-color: rgba(231, 58, 57, .8);
+    color: white;
+    padding: 1em 1em;
+    cursor: pointer;
+    display: block;
+    width: 30%;
+    margin: 0 35%;
+    font-size: 1em;
+  }
+  input[type = "submit"]:hover{
+    background-color:  rgba(231, 58, 57, 1);
+    color:black;
+  }
+  footer{
+    position: absolute;
+    color:white;
+    width:100%;
+    text-align: center;
+    margin-top: 100px;
+    padding: 20px;
+    background-color: #0398FC;;
+}
+
+.column{
+    float:left;
+    width: 33.33%;
+    border: 1px black;
+}
+
+.row:after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+p+input[type="text"]{
+    width:150px;
+    border: 3px black;
+    height:20px; 
+    text-align:center; 
+}
+
+.wrap{
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:10px;
+}
+.button{
+    width:70px;
+    height:20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+    background-color:black;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3 ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+/* Styling Expirimenting*/
+
+.button:hover{
+  background-color: black;
+  box-shadow: 0 15px 20px rgb(231, 58, 57);
+  color:white;
+
+}
+.social {
+  width: 50px;
+  height: 50px;
+  padding-top: 30px;
+}
