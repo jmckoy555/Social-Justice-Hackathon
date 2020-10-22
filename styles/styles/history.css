@@ -1,0 +1,157 @@
+*{
+  margin:0;
+  padding:0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navContainer {
+  width: 60%;
+  margin: 0 auto;
+  background: #0398FC;
+  padding-bottom: 1em;
+  height: max-content;
+}
+
+ .navBar {
+  list-style: none;
+  text-align: center;
+}
+
+.navBar li {
+  display: inline-block;
+}
+
+.navBar li a {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+
+.navBar li a,
+.navBar li a:after,
+.navBar li a:before {
+  transition: all .5s;
+}
+
+.navBar li a:hover {
+  color: rgb(68, 67, 67);
+}
+
+.navBar li a{
+      position: relative;
+}
+
+  .navBar li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: rgb(231, 58, 57);
+  height: 3px;
+}
+.navBar li a:hover:after {
+  width: 100%;
+}
+
+h1,h2 {
+    margin: 10px;
+    padding-top:50px;
+    text-align: center;
+}
+
+h4{
+    font-weight: normal;
+}
+body{
+    text-align: center;
+    color: #DB4444; 
+    background-color: white;
+    /*text-shadow: 1px 1px maroon;*/
+}
+.container{
+    text-align:center;
+}
+
+/* Test */
+footer{
+    position: absolute;
+    color:white;
+    width:100%;
+    text-align: center;
+    margin-top: 100px;
+    padding: 20px;
+    background-color: #0398FC;;
+}
+
+.column{
+    float:left;
+    width: 33.33%;
+    border: 1px black;
+}
+
+.row:after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+input[type="text"]{
+    width:150px;
+    border: 3px black;
+    height:20px; 
+    text-align:center; 
+}
+
+.wrap{
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:10px;
+}
+.button{
+    width:70px;
+    height:20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+    background-color:black;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3 ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+/* Styling Expirimenting*/
+
+.button:hover{
+  background-color: black;
+  box-shadow: 0 15px 20px rgb(231, 58, 57);
+  color:white;
+
+}
+.social {
+  width: 50px;
+  height: 50px;
+  padding-top: 30px;
+}
+
+@media screen and(max-width:900px){
+  
+  body{
+      width:100%;
+  }
+  footer{
+      width:100%;
+  }
+}
+
+
